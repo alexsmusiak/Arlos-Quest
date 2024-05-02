@@ -1,0 +1,61 @@
+[gd_scene load_steps=5 format=3 uid="uid://dqjt86ys57npw"]
+
+[ext_resource type="Texture2D" uid="uid://31whqocinqro" path="res://Assets/AR_title_background.png" id="1_ivsvh"]
+[ext_resource type="Texture2D" uid="uid://ci32fsad3qh6k" path="res://Assets/AR_title_sprite.png" id="2_ne6io"]
+[ext_resource type="FontFile" uid="uid://bpamyhxs55pck" path="res://Assets/PixelOperator8-Bold.ttf" id="3_ajaqv"]
+[ext_resource type="FontFile" uid="uid://bfq87cxqqt7kw" path="res://Assets/PixelOperator8.ttf" id="4_53e7a"]
+
+[node name="ar_title_screen" type="Node2D"]
+
+[node name="ArTitleBackground" type="Sprite2D" parent="."]
+position = Vector2(160, 90)
+texture = ExtResource("1_ivsvh")
+
+[node name="ArTitleSprite" type="Sprite2D" parent="."]
+position = Vector2(163, 40)
+texture = ExtResource("2_ne6io")
+
+[node name="Options" type="Node2D" parent="."]
+
+[node name="Start Game" type="Label" parent="Options"]
+offset_left = 112.0
+offset_top = 80.0
+offset_right = 200.0
+offset_bottom = 92.0
+theme_override_fonts/font = ExtResource("3_ajaqv")
+theme_override_font_sizes/font_size = 8
+text = "START GAME"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Game Options" type="Label" parent="Options"]
+offset_left = 112.0
+offset_top = 93.0
+offset_right = 200.0
+offset_bottom = 105.0
+theme_override_fonts/font = ExtResource("3_ajaqv")
+theme_override_font_sizes/font_size = 8
+text = "OPTIONS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Exit Game" type="Label" parent="Options"]
+offset_left = 112.0
+offset_top = 107.0
+offset_right = 200.0
+offset_bottom = 119.0
+theme_override_fonts/font = ExtResource("3_ajaqv")
+theme_override_font_sizes/font_size = 8
+text = "EXIT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Copyright Notice" type="Label" parent="."]
+modulate = Color(0.941176, 0.309804, 0.470588, 1)
+offset_left = 19.0
+offset_top = 165.0
+offset_right = 301.0
+offset_bottom = 188.0
+theme_override_fonts/font = ExtResource("4_53e7a")
+theme_override_font_sizes/font_size = 8
+text = "© 2024 Arlo's Quest by Alex Smusiak. Ver 0.98"
