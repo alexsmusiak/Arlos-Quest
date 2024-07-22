@@ -15,6 +15,14 @@ config/description="Arlo's Quest is a retro 8bit inspired pixel platformer made 
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[file_customization]
+
+folder_colors={
+"res://Assets/": "pink",
+"res://Misc/": "yellow",
+"res://Scripts/": "green"
+}
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
