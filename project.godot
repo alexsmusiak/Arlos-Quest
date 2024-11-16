@@ -12,8 +12,17 @@ config_version=5
 
 config/name="Arlo's Quest"
 config/description="Arlo's Quest is a retro 8bit inspired pixel platformer made in Godot. It will serve as a base project for me to learn the engine."
+run/main_scene="res://Scenes/main.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=320
+window/size/viewport_height=180
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
 
 [file_customization]
 
@@ -25,5 +34,6 @@ folder_colors={
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
